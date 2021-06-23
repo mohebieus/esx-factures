@@ -7,7 +7,7 @@ AddEventHandler('esx:sendfac', function(price, target)
     local xPlayer = ESX.GetPlayerId(_src)
     local target = ESX.GetPlayerId(target)
     TriggerClientEvent('esx:showNotification', _src, "Vous venez d´envoyer ~g~"..price.."$~s~ à "..GetPlayerName(target))
-    TriggerClientEvent('esx:showNotification', target, "")
+    TriggerClientEvent('esx:showNotification', target, "Facture~n~ ~b~Montant :~s~"..price)
       
     end
 end)
